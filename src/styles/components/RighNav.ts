@@ -75,7 +75,7 @@ export const Ul = styled.ul<BurgerProps>`
         text-align: left;
         font-size: 1.3rem;
         line-height: 2rem;
-        padding: 0.4rem;
+        padding: 0.8rem 1rem;
         transition: all 0.2s ease-in-out;
 
         svg {
@@ -85,7 +85,7 @@ export const Ul = styled.ul<BurgerProps>`
 
         :hover {
           color: ${props => props.theme.teal[400]};
-          transform: scale(1.1);
+          transform: scale(1.05);
 
           svg {
             color: ${props => props.theme.teal[400]};
