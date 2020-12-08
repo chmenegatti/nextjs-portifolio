@@ -1,14 +1,19 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import React from 'react';
+import { AppProps } from 'next/app';
+import { ThemeProvider } from 'styled-components';
 
-import theme from '../theme'
-import { AppProps } from 'next/app'
+import GlobalStyle from '../styles/global';
+import theme from '../styles/theme';
+import NavBar from '../components/NavBar';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <ChakraProvider resetCSS theme={theme}>
+    <ThemeProvider theme={theme}>
+      <NavBar />
       <Component {...pageProps} />
-    </ChakraProvider>
-  )
-}
+      <GlobalStyle />
+    </ThemeProvider>
+  );
+};
 
-export default MyApp
+export default MyApp;
