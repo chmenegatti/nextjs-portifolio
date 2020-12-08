@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiFilePlus, FiHome, FiInfo, FiMail, FiUsers } from 'react-icons/fi';
-import { Ul } from '../styles/pages/components/RighNav';
+import { Ul } from '../styles/components/RighNav';
 
 interface BurgerProps {
   open: boolean;

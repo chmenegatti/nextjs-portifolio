@@ -32,6 +32,7 @@ export const Ul = styled.ul<BurgerProps>`
       display: block;
       color: ${props => props.theme.teal[800]};
       transition: all 0.3s ease-in-out;
+      align-items: center;
 
       svg {
         color: ${props => props.theme.teal[800]};

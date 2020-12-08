@@ -1,7 +1,7 @@
 import React from 'react';
 import Burger from './Burger';
 
-import { Nav } from '../styles/pages/components/NavBar';
+import { Nav } from '../styles/components/NavBar';
 
 const NavBar: React.FC = () => {
   return (
