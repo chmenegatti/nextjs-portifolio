@@ -8,8 +8,8 @@ export const StyledBurger = styled.div<BurgerProps>`
   width: 1.6rem;
   height: 1.65rem;
   position: fixed;
-  top: 15px;
-  right: 20px;
+  top: 1.5rem;
+  right: 1.5rem;
   z-index: 20;
   display: none;
 

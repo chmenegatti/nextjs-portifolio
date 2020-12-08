@@ -7,7 +7,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.2",
     "next": "latest",
+    "next-images": "^1.6.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",

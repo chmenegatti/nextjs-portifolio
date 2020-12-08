@@ -57,7 +57,7 @@ export const Ul = styled.ul<BurgerProps>`
     right: 0;
     height: 100vh;
     width: 50vw;
-    padding-top: 3.5rem;
+    padding-top: 4.5rem;
     transition: transform 0.3s ease-in-out;
     box-shadow: ${({ open }) =>
       open ? '-1px 0 2px 0 rgba(0, 0, 0, 1)' : 'none'};
