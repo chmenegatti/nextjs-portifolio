@@ -10,14 +10,11 @@ export const Ul = styled.ul<BurgerProps>`
   flex-flow: row nowrap;
   padding: 1rem 0;
   justify-content: space-between;
-  min-width: 40vw;
 
   li {
-    padding: 8px 10px;
     font-size: 1.2rem;
     display: block;
     text-align: center;
-    align-items: center;
     justify-content: center;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 
