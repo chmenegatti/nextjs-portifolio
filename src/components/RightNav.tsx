@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { FiFilePlus, FiHome, FiInfo, FiMail, FiUsers } from 'react-icons/fi';
 import { Ul } from '../styles/components/RighNav';
 
@@ -9,16 +10,20 @@ const RightNav: React.FC<BurgerProps> = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <a href="#">
-          <FiHome />
-          <div>Home</div>
-        </a>
+        <Link href="/">
+          <a href="/">
+            <FiHome />
+            <div>Home</div>
+          </a>
+        </Link>
       </li>
       <li>
-        <a href="#">
-          <FiInfo />
-          <div>About</div>
-        </a>
+        <Link href="/about">
+          <a href="/about">
+            <FiInfo />
+            <div>About</div>
+          </a>
+        </Link>
       </li>
       <li>
         <a href="#">

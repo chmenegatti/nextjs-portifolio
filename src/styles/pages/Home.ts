@@ -39,23 +39,25 @@ export const BodyContainer = styled.div`
       margin-top: 2rem;
       font-size: 1.2rem;
       line-height: 2rem;
-      color: ${props => props.theme.gray[600]}
+      color: ${props => props.theme.gray[600]};
     }
   }
 
   > div {
     margin-left: 24px;
-    svg {
-      width: 85%;
-      height: 85%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
     }
   }
 
   @media (max-width: 768px) {
-    display: block;
-    padding: 0.5rem;
-    flex-direction: row-reverse;
     width: 100vw;
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column-reverse;
     justify-content: center;
 
     div {
@@ -65,6 +67,7 @@ export const BodyContainer = styled.div`
       h1 {
         font-size: 3rem;
       }
+
       p {
         margin-top: 1rem;
       }

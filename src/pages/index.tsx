@@ -1,6 +1,6 @@
 import React from 'react';
 import { BodyContainer, Container } from '../styles/pages/Home';
-import LinuxICon from '../assets/linux.svg';
+import HomeImage from '../assets/home.image.png';
 
 const Index: React.FC = () => {
   return (
@@ -12,11 +12,11 @@ const Index: React.FC = () => {
           <p>
             And this is my personal portifolio where i&apos;ll show all of my
             jobs with JavaScrip (Node.JS, React.JS, React Native, Next.JS,
-            Styled Components and Chakra-UI
+            Styled Components and Chakra-UI)
           </p>
         </div>
         <div>
-          <LinuxICon />
+          <img src={HomeImage} alt="WebDeveloper FullStack JS" />
         </div>
       </BodyContainer>
     </Container>
