@@ -29,7 +29,8 @@ const About: React.FC = () => {
               ReacJS, React Native, and other javascript frameworks. During that
               time I developed some applications for local use. I participated
               in RocketSeat&apos;s OmniStack and Next Level Weeks developing
-              some applications where they will be presented here.
+              some applications where they will be presented here. <br />
+              Nice to meet you! :)
             </p>
           </AboutSection>
           <SkilsSection>
