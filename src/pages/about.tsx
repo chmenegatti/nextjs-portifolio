@@ -17,8 +17,6 @@ const About: React.FC = () => {
     { key: 3, title: 'React Native', barColor: '#0063D1', completed: 89 },
   ];
 
-  useEffect(() => {}, []);
-
   return (
     <Container>
       <GridContent>
