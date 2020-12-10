@@ -40,7 +40,7 @@ const About: React.FC = () => {
                 <li key={itens.key}>
                   {itens.title}
                   <ProgressBar
-                    completed={itens.completed}
+                    value={itens.completed}
                     barColor={itens.barColor}>
                     {itens.completed}%
                   </ProgressBar>

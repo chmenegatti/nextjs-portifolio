@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled, { Keyframes, keyframes } from 'styled-components';
 
 interface ProgressProps {
   barColor: string;
-  progressFill: number;
+  progressFill: string;
 }
 
 export const Container = styled.div`
@@ -13,11 +13,20 @@ export const Container = styled.div`
   margin: 8px 0;
 `;
 
+const fillIt = (props: ProgressProps): Keyframes => keyframes`
+  from {
+    width: 0%
+  }
+  to {
+    width: ${props.progressFill}
+  }
+`;
+
 export const Filler = styled.div<ProgressProps>`
   height: 100%;
   width: ${props => props.progressFill}%;
+  animation: ${fillIt} 1.2s linear normal;
   background-color: ${props => props.barColor};
-  transition: width 1s ease-in-out;
   border-radius: inherit;
   text-align: right;
   display: flex;

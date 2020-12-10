@@ -78,6 +78,7 @@ export const SkilsSection = styled.div`
   }
 
   ul {
+    margin-top: 2em;
     list-style: none;
 
     li {

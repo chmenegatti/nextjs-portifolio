@@ -3,17 +3,18 @@ import { Container, Filler, Label } from '../styles/components/ProgressBar';
 
 interface ProgressProps {
   barColor: string;
-  completed: number;
+  value: number;
 }
 
 const ProgressBar: React.FC<ProgressProps> = ({
   barColor,
-  completed,
+  value,
   children,
 }) => {
   return (
     <Container>
-      <Filler barColor={barColor} progressFill={completed}>
+      <Filler barColor={barColor} progressFill={value}>
+        {console.log(value)}
         <Label>{children}</Label>
       </Filler>
     </Container>
