@@ -6,11 +6,11 @@ interface ProgressProps {
 }
 
 export const Container = styled.div`
-  height: 20px;
+  height: 18px;
   width: 100%;
   background-color: #ccc;
   border-radius: 8px;
-  margin: 8px 0;
+  margin: 0 0 4px 0;
 `;
 
 const fillIt = (props: ProgressProps): Keyframes => keyframes`
@@ -35,7 +35,7 @@ export const Filler = styled.div<ProgressProps>`
 `;
 
 export const Label = styled.span`
-  padding: 12px;
+  padding: 8px;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
 `;

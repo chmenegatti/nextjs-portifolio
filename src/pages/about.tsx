@@ -11,9 +11,11 @@ import {
 
 const About: React.FC = () => {
   const skillsData = [
-    { key: 1, title: 'Node.JS', barColor: '#276749', completed: '95' },
-    { key: 2, title: 'Reac.JS/Next.JS', barColor: '#29487D', completed: '92' },
-    { key: 3, title: 'React Native', barColor: '#0063D1', completed: '89' },
+    { title: 'Node.JS', barColor: '#276749', completed: '95' },
+    { title: 'React.JS/Next.JS', barColor: '#29487D', completed: '92' },
+    { title: 'React Native', barColor: '#0063D1', completed: '89' },
+    { title: 'JavaScript', barColor: '#fdd90a', completed: '98' },
+    { title: 'HTML/CSS', barColor: '#65008d', completed: '99' },
   ];
 
   return (
@@ -36,8 +38,8 @@ const About: React.FC = () => {
           <SkilsSection>
             <h3>Skills</h3>
             <ul>
-              {skillsData.map(itens => (
-                <li key={itens.key}>
+              {skillsData.map((itens, key) => (
+                <li key={key}>
                   {itens.title}
                   <ProgressBar
                     value={itens.completed}
