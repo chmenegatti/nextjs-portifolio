@@ -3,7 +3,7 @@ import { Container, Filler, Label } from '../styles/components/ProgressBar';
 
 interface ProgressProps {
   barColor: string;
-  value: number;
+  value: string;
 }
 
 const ProgressBar: React.FC<ProgressProps> = ({

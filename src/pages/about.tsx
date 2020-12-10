@@ -11,9 +11,9 @@ import {
 
 const About: React.FC = () => {
   const skillsData = [
-    { key: 1, title: 'Node.JS', barColor: '#276749', completed: 95 },
-    { key: 2, title: 'Reac.JS/Next.JS', barColor: '#29487D', completed: 92 },
-    { key: 3, title: 'React Native', barColor: '#0063D1', completed: 89 },
+    { key: 1, title: 'Node.JS', barColor: '#276749', completed: '95' },
+    { key: 2, title: 'Reac.JS/Next.JS', barColor: '#29487D', completed: '92' },
+    { key: 3, title: 'React Native', barColor: '#0063D1', completed: '89' },
   ];
 
   return (
