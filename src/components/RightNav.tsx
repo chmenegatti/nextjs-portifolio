@@ -26,10 +26,12 @@ const RightNav: React.FC<BurgerProps> = ({ open }) => {
         </Link>
       </li>
       <li>
-        <a href="#">
-          <FiFilePlus />
-          <div>Jobs</div>
-        </a>
+        <Link href="/jobsPage">
+          <a href="/jobsPage">
+            <FiFilePlus />
+            <div>Jobs</div>
+          </a>
+        </Link>
       </li>
       <li>
         <a href="#">
