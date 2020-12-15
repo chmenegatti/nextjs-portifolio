@@ -7,7 +7,6 @@ import devRadarImg from '../assets/devradar.png';
 
 interface CardsProps {
   title: string;
-
 }
 
 const jobsPage: React.FC<CardsProps> = () => {
@@ -18,7 +17,7 @@ const jobsPage: React.FC<CardsProps> = () => {
         description="App desenvolvido durante a Semana Omnistack 8 para conectar outros devs com o mesmo interesse em programação. Tecnologias usadas: NodeJS, ReactJS e ReactNative."
         imageUrl={tinDevImg}
         url="https://github.com/chmenegatti/omnistack08-tindev"
-        badge={['JavaScript', 'NodeJS', 'React', 'React Native', 'MongoDB']}
+        badge={['JavaScript', 'NodeJS', 'React', 'ReactNative', 'MongoDB']}
       />
       <Cards
         title="AirCnC"
@@ -32,7 +31,7 @@ const jobsPage: React.FC<CardsProps> = () => {
         description="O DevRadar é um projeto que visa facilitar a busca por desenvolvedores próximos a você utilizando Google Maps. Tecnologias usadas: NodeJS, ReactJS e ReactNative."
         imageUrl={devRadarImg}
         url="https://github.com/chmenegatti/omnistack10-devradar"
-        badge={['NodeJS', 'React', 'React Native']}
+        badge={['NodeJS', 'React', 'ReactNative']}
       />
     </BodyContainer>
   );

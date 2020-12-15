@@ -3,6 +3,7 @@ import bgcard from '../../assets/card.background.jpg';
 
 interface CardsProps {
   bgColor: string;
+  fontColor: string;
 }
 
 export const BodyContainer = styled.div`
@@ -151,6 +152,7 @@ export const Badge = styled.div<CardsProps>`
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  background-color: #fda;
+  background-color: ${props => props.bgColor};
+  color: ${props => props.fontColor};
   border-radius: 16px;
 `;
