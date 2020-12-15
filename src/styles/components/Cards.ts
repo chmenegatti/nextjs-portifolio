@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import bgcard from '../../assets/card.background.jpg';
 
+interface CardsProps {
+  bgColor: string;
+}
+
 export const BodyContainer = styled.div`
   display: flex;
   align-items: center;
@@ -16,8 +20,8 @@ export const CardContainer = styled.div`
 `;
 
 export const CardBody = styled.div`
-  width: 360px;
-  height: 460px;
+  width: 380px;
+  height: 490px;
   background: #fff;
   margin: 24px;
   border-radius: 20px;
@@ -50,24 +54,27 @@ export const CardBody = styled.div`
 export const CardContent = styled.div`
   text-align: justify;
   padding: 0 2rem;
-  transition: all 0.75s ease-in-out;
   transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 18rem;
+  max-height: 19rem;
+  height: 100%;
 
   h1 {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    margin: 1rem 0;
   }
 
   p {
     line-height: 1.5rem;
     margin: 1rem 0;
-    transition: all 0.75s ease-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
   }
 
   a {
@@ -124,4 +131,26 @@ export const CardContent = styled.div`
       }
     }
   }
+`;
+
+export const BadgeContainer = styled.div`
+  max-height: 24px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+  margin-bottom: 2.2rem;
+`;
+
+export const Badge = styled.div<CardsProps>`
+  padding: 3px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fda;
+  border-radius: 16px;
 `;

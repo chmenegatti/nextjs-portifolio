@@ -4,6 +4,8 @@ import {
   CardBody,
   CardContainer,
   CardContent,
+  BadgeContainer,
+  Badge,
 } from '../styles/components/Cards';
 
 interface CardProps {
@@ -11,6 +13,7 @@ interface CardProps {
   imageUrl: string;
   description: string;
   url: string;
+  badge: string[];
 }
 
 const Cards: React.FC<CardProps> = props => {
@@ -21,6 +24,13 @@ const Cards: React.FC<CardProps> = props => {
           <img src={props.imageUrl} alt={props.title} />
         </div>
         <CardContent>
+          <BadgeContainer>
+            {props.badge.map((badges, index) => (
+              <Badge key={index} bgColor={badges}>
+                {badges}
+              </Badge>
+            ))}
+          </BadgeContainer>
           <h1>{props.title}</h1>
           <p>{props.description}</p>
           <a href={props.url}>
