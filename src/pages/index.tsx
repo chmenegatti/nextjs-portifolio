@@ -7,12 +7,12 @@ const Index: React.FC = () => {
     <Container>
       <BodyContainer>
         <div>
-          <h5>Hello! My name is</h5>
+          <h5>Hello! Eu sou</h5>
           <h1>Cesar Menegatti</h1>
           <p>
-            And this is my personal portifolio where i&apos;ll show all of my
-            jobs with JavaScrip (Node.JS, React.JS, React Native, Next.JS,
-            Styled Components and Chakra-UI)
+            E este é meu site pessoal/portifólio onde apresentarei os
+            aplicativos desenvolvidos na Stack JavaScript (Node.JS, React.JS,
+            React Native, Next.JS, Styled Components e Chakra-UI)
           </p>
         </div>
         <div>

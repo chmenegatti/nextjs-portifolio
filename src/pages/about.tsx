@@ -21,17 +21,19 @@ const About: React.FC = () => {
   return (
     <Container>
       <GridContent>
-        <HeaderSection>About Me</HeaderSection>
+        <HeaderSection>Sobre Mim</HeaderSection>
         <BodySection>
           <AboutSection>
             <h3>Howdy!</h3>
             <p>
-              My name is Cesar Menegatti and i am a FullStack JavaScript
-              Developer. During the last few years I have been studying NodeJS,
-              ReacJS, React Native, and other javascript frameworks. During that
-              time I developed some applications for local use. I participated
-              in RocketSeat&apos;s OmniStack and Next Level Weeks developing
-              some applications where they will be presented here. <br />
+              Meu nome é Cesar Menegatti eu sou desenvolvedor FullStack
+              JavaScript Durante os últimos anos tenho estudado e me
+              aperfeiçoado em NodeJS, ReacJS, React Native, outros FrameWorks
+              JavaScript. Nesses estudos desenvolvi aplicações para uso local.
+              Participei de todos os workshops promovidos pela RocketSeat
+              através da semana OmniStack e das New Level Weeks. Concluí com
+              êxito o BootCamp GoStack da RocketSeat em 2020.
+              <br />
               Nice to meet you! :)
             </p>
           </AboutSection>

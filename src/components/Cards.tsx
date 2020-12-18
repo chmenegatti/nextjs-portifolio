@@ -7,6 +7,8 @@ import {
   BadgeContainer,
   Badge,
 } from '../styles/components/Cards';
+
+import badgeColors from '../data/badgeColors.json';
 interface CardProps {
   title: string;
   imageUrl: string;
@@ -16,16 +18,6 @@ interface CardProps {
 }
 
 const Cards: React.FC<CardProps> = props => {
-  const badgeColors = [
-    { badgeName: 'JavaScript', badgeColor: '#f7e244', fontColor: '#000' },
-    { badgeName: 'NodeJS', badgeColor: '#42853D', fontColor: '#fff' },
-    { badgeName: 'React', badgeColor: '#49CEF7', fontColor: '#000' },
-    { badgeName: 'ReactNative', badgeColor: '#00A1E1', fontColor: '#fff' },
-    { badgeName: 'MongoDB', badgeColor: '#009647', fontColor: '#fff' },
-    { badgeName: 'PostgreSQL', badgeColor: '#31648D', fontColor: '#fff' },
-    { badgeName: 'TypeScript', badgeColor: '#3174C0', fontColor: '#fff' },
-  ];
-
   return (
     <CardContainer>
       <CardBody className="card">
@@ -36,7 +28,6 @@ const Cards: React.FC<CardProps> = props => {
           <BadgeContainer>
             {props.badge.map((badge, index) => {
               const picked = badgeColors.find(item => item.badgeName === badge);
-
               return (
                 <Badge
                   key={index}

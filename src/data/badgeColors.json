@@ -1,0 +1,9 @@
+[
+  { "badgeName": "JavaScript", "badgeColor": "#f7e244", "fontColor": "#000" },
+  { "badgeName": "NodeJS", "badgeColor": "#42853D", "fontColor": "#fff" },
+  { "badgeName": "React", "badgeColor": "#49CEF7", "fontColor": "#000" },
+  { "badgeName": "ReactNative", "badgeColor": "#00A1E1", "fontColor": "#fff" },
+  { "badgeName": "MongoDB", "badgeColor": "#009647", "fontColor": "#fff" },
+  { "badgeName": "PostgreSQL", "badgeColor": "#31648D", "fontColor": "#fff" },
+  { "badgeName": "TypeScript", "badgeColor": "#3174C0", "fontColor": "#fff" }
+]

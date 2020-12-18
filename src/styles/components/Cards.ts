@@ -150,7 +150,6 @@ export const Badge = styled.div<CardsProps>`
   padding: 3px;
   width: 100%;
   font-size: 14px;
-  font-weight: bold;
   text-align: center;
   background-color: ${props => props.bgColor};
   color: ${props => props.fontColor};

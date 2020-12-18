@@ -21,7 +21,7 @@ const RightNav: React.FC<BurgerProps> = ({ open }) => {
         <Link href="/about">
           <a href="/about">
             <FiInfo />
-            <div>About</div>
+            <div>Sobre</div>
           </a>
         </Link>
       </li>
@@ -34,15 +34,17 @@ const RightNav: React.FC<BurgerProps> = ({ open }) => {
         </Link>
       </li>
       <li>
-        <a href="#">
-          <FiUsers />
-          <div>Social</div>
-        </a>
+        <Link href="/social">
+          <a href="/social">
+            <FiUsers />
+            <div>Social</div>
+          </a>
+        </Link>
       </li>
       <li>
         <a href="#">
           <FiMail />
-          <div>Contact</div>
+          <div>Contato</div>
         </a>
       </li>
     </Ul>
